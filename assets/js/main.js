@@ -45,33 +45,12 @@ playBtn.addEventListener("click",()=> {
     duration:1,
     ease:"power4.inOut"
 })
-    // if( song.autoplay === false) {
-    //     song.autoplay === true
-    //     song.play();
-    //     tl.to(".startBtn",{
-    //         opacity:0,
-    //         ease:"power2.in",
-    //         duration:1,
-    //         rotate:360,
-    //         transformOrigin:"center center"
-    //     })
-    //     tl.to(".pauseBtn",{
-    //         opacity:1,
-    //         ease:"power4.inOut",
-    //         duration:1,
-    //         rotate:360,
-    //         transformOrigin:"center center",
-    //         delay:.2
-    //     },"<") 
-    //     console.log(song)
-    // } 
-    // else if(song.play()) {
-    //     debugger
-    //     song.pause();
-        
-    // }
+    if( rythm.start()) {
+        console.error()
+        rythm.start()
+    } 
+   
 
-    rythm.start()
    
     rythm.addRythm('pg', 'pulse', 0, 10)
     rythm.addRythm('glass', 'pulse', 0, 50)
